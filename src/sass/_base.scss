@@ -1,0 +1,29 @@
+$color-Blue: #345FF6;
+$color-Gunmetal:#253347;
+$color-DarkElectricBlue: #5E6E85;
+$color-Borders: #D8E2E7;
+$color-White: white;
+
+$font-main: "Inter", sans-serif;
+
+body 
+{
+    margin: 0;
+    font-family: $font-main;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+* :first-child
+{
+    margin-top: 0;
+}
+
+* :last-child 
+{
+    margin-bottom: 0;
+}
+
+
