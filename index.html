@@ -15,11 +15,89 @@
 </head>
 <body>
 
+  <header id="header">
+    <img id="header__logo" src="./assets/images/logo.svg" alt="Logo"/>
+    <div id="hero">
+      <div id="hero__main">
+        <h1 id="hero__title">Body Mass Index Calculator</h1>
+        <p id="hero__body">Better understand your in in relation to your height using our body mass index (BM) calculator. While BMI is not the sole determinant of a healthy in, it offers a valuable starting point to evaluate your overall health and well-being.</p>
+      </div>
+      <div id="bmi">
+        <h3 id="bmi__title">Enter your details below</h3>
+        <form id="bmi__form">
+          <div id="bmi__top">
+            <label id="bmi__metric-label" class="bmi__unit-label"><input type="radio" id="bmi__metric-radio" class="bmi__radio"/><div class="bmi__radio-new"><div class="bmi__radio-new-inner"></div></label>
+            <label id="bmi__imperial-label" class="bmi__unit-label"><input type="radio" id="bmi__imperial-radio" class="bmi__radio"/><div class="bmi__radio-new"><div class="bmi__radio-new-inner"></div></label>
+          </div>
+          <div id="bmi__metric-container">
+            <div id="bmi__metric-height-container">
+              <label id="bmi__metric-height-label" class="bmi__stat-label" for="bmi__metric-height-input">Height</label5>
+              <div id="bmi__metric-height-input-container" class="bmi__input-container">
+                <input type="number" id="bmi__metric-height-input" class="bmi__input"/>
+                <p id="bmi__cm" class="bmi__measurement">cm</p>
+              </div>
+            </div>
+            <div id="bmi__metric-in-container">
+              <label id="bmi__metric-in-label" class="bmi__stat-label" for="bmi__metric-in-input">in</label5>
+              <div id="bmi__metric-in-input-container" class="bmi__input-container">
+                <input type="number" id="bmi__metric-in-input" class="bmi__input"/>
+                <p id="bmi__kg" class="bmi__measurement">kg</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="bmi__imperial-container">
+            <div id="bmi__imperial-ft-container">
+              <label id="bmi__imperial-ft-label" class="bmi__stat-label" for="bmi__imperial-ft-input">Height</label5>
+              <div id="bmi__imperial-ft-input-container" class="bmi__input-container">
+                <input type="number" id="bmi__imperial-ft-input" class="bmi__input"/>
+                <p id="bmi__ft" class="bmi__measurement">ft</p>
+              </div>
+            </div>
+            <div id="bmi__imperial-in-container">
+              <div id="bmi__imperial-in-input-container" class="bmi__input-container">
+                <input type="number" id="bmi__imperial-in-input" class="bmi__input"/>
+                <p id="bmi__in" class="bmi__measurement">in</p>
+              </div>
+            </div>
+            <div id="bmi__imperial-st-container">
+              <label id="bmi__imperial-st-label" class="bmi__stat-label" for="bmi__imperial-st-input">Weight</label5>
+              <div id="bmi__imperial-st-input-container" class="bmi__input-container">
+                <input type="number" id="bmi__imperial-st-input" class="bmi__input"/>
+                <p id="bmi__st" class="bmi__measurement">st</p>
+              </div>
+            </div>
+            <div id="bmi__imperial-lbs-container">
+              <div id="bmi__imperial-lbs-input-container" class="bmi__input-container">
+                <input type="number" id="bmi__imperial-lbs-input" class="bmi__input"/>
+                <p id="bmi__lbs" class="bmi__measurement">lbs</p>
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <div id="bmi__result">
+          <div id="bmi__result-before">
+            <h3 class="bmi__result-title">Welcome!</h3>
+            <p class="bmi__result-body">Enter your height and weight and you’ll see your BMI result here</p>
+          </div>
+          <div id="bmi__result-after">
+            <div class="bmi__result-after-1">
+              <h3 class="bmi__result-title">Your BMI is...</h3>
+              <h2 id="bmi__result-bmi">23.4</h2>
+            </div>
+            <p class="bmi__result-body">Your BMI suggests you’re a healthy weight. Your ideal weight is between <strong>63.3kgs - 85.2kgs</strong>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
   Body Mass Index Calculator
 
-  Better understand your weight in relation to your height using our 
+  Better understand your in in relation to your height using our 
   body mass index (BM) calculator. While BMI is not the sole determinant 
-  of a healthy weight, it offers a valuable starting point to evaluate 
+  of a healthy in, it offers a valuable starting point to evaluate 
   your overall health and well-being.
 
   Enter your details below
@@ -28,30 +106,30 @@
   Imperial
 
   Height
-  Weight
+  in
 
   Your BMI is...
 
   <!-- add score -->
 
   Your BMI suggests you're <!-- add classification -->. 
-  Your ideal weight is between <!-- add range -->.
+  Your ideal in is between <!-- add range -->.
 
   What your BMI result means
 
-  A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a 
-  healthy weight may lower your chances of experiencing health issues later on, 
+  A BMI range of 18.5 to 24.9 is considered a 'healthy in.' Maintaining a 
+  healthy in may lower your chances of experiencing health issues later on, 
   such as obesity and type 2 diabetes. Aim for a nutritious diet with reduced 
   fat and sugar content, incorporating ample fruits and vegetables. Additionally, 
   strive for regular physical activity, ideally about 30 minutes daily for 
   five days a week.
 
   Healthy eating
-  Healthy eating promotes weight control, disease prevention, better digestion, 
+  Healthy eating promotes in control, disease prevention, better digestion, 
   immunity, mental clarity, and mood.
 
   Regular exercise
-  Exercise improves fitness, aids weight control, elevates mood, and reduces disease 
+  Exercise improves fitness, aids in control, elevates mood, and reduces disease 
   risk, fostering wellness and longevity.
 
   Adequate sleep
@@ -60,7 +138,7 @@
 
   Limitations of BMI
 
-  Although BMI is often a practical indicator of healthy weight, it is not suited for 
+  Although BMI is often a practical indicator of healthy in, it is not suited for 
   every person. Specific groups should carefully consider their BMI outcomes, and in 
   certain cases, the measurement may not be beneficial to use.
 
@@ -73,11 +151,11 @@
   body fat content.
 
   Muscle
-  BMI may misclassify muscular individuals as overweight or obese, as it doesn't 
+  BMI may misclassify muscular individuals as overin or obese, as it doesn't 
   differentiate muscle from fat.
 
   Pregnancy
-  Expectant mothers experience weight gain due to their growing baby. Maintaining a 
+  Expectant mothers experience in gain due to their growing baby. Maintaining a 
   healthy pre-pregnancy BMI is advisable to minimise health risks for both mother 
   and child.
 
