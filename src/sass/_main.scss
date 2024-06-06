@@ -16,4 +16,45 @@
     &__title {
         @extend .heading-l;
     }
+
+    &__main 
+    {
+        padding: 0 6.4%;
+    }
+}
+
+@media (min-width: 768px)
+{
+    #section-1 
+    {
+        flex-direction: row;
+        align-items: center;
+        padding: 0 5.2%;
+
+        &__img {
+            width: 51%;
+            position: relative;
+            left: -5.2%;
+            transform: translateX(-15%);
+        }
+
+        &__main 
+        {
+            width: 39%;
+            padding: 0;
+        }
+    }
+}
+
+
+@media (min-width: 1440px)
+{
+    #section-1 
+    {
+        padding: 0 11.4%;
+
+        &__img {
+            transform: translateX(0%);
+        }
+    }
 }
