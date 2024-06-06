@@ -3,6 +3,8 @@ $color-Gunmetal:#253347;
 $color-DarkElectricBlue: #5E6E85;
 $color-Borders: #D8E2E7;
 $color-White: white;
+$color-gradient1: linear-gradient(135deg, hsla(184, 95%, 92%, 0%), hsla(216, 95%, 92%, 100%));
+$color-gradient2: linear-gradient(90deg, #345FF6, #587DFF);
 
 $font-main: "Inter", sans-serif;
 
@@ -10,6 +12,11 @@ body
 {
     margin: 0;
     font-family: $font-main;
+    color: $color-DarkElectricBlue;
+}
+
+p {
+    line-height: 1.5;
 }
 
 * {
