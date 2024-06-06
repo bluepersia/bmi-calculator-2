@@ -70,6 +70,11 @@
         margin-bottom: 1.5em;
     }
 
+    &__submitter 
+    {
+        position: absolute;
+        opacity: 0%;
+    }
     &__metric-container, &__imperial-container 
     {
         display: none;
@@ -114,6 +119,16 @@
     }
 
     &__result-after 
+    {
+        display: none
+    }
+
+    &.submitted &__result-after 
+    {
+        display: block
+    }
+
+    &.submitted &__result-before 
     {
         display: none
     }
