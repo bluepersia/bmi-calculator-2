@@ -216,6 +216,8 @@
             height: 65%;
         }
     }
+
+   
     #bmi 
     {
         padding: 2em;
@@ -235,4 +237,43 @@
             border-bottom-right-radius: 999px;
         }
     }
+}
+
+
+@media (min-width: 1440px)
+{
+    #header {
+        padding: 4.8em 11.4% 0;
+        margin-bottom: 4em;
+
+        &::before {
+            height: 100%;
+            width: 70%;
+        }
+
+        &__logo 
+        {
+            margin-left: 0;
+            width: 64px;
+        }
+    }
+    #hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.75em 0 6em;
+
+        &__main 
+        {
+            text-align: left;
+            max-width: 520px;
+            margin-left: 0;
+        }
+    }
+
+    #bmi 
+    {
+        width: 48.6%;
+    }
+
 }
