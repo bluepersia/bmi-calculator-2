@@ -1,0 +1,279 @@
+
+
+#header {
+
+    position: relative;
+    padding: 2em 6.4% 4.5em;
+
+    &::before 
+    {
+        content: '';
+        position: absolute;
+        background: $color-gradient1;
+        height: 55%;
+        width: 100%;
+        top: 0px;
+        left: 0px;
+        z-index: -1;
+        border-bottom-left-radius: 35px;
+        border-bottom-right-radius: 35px;
+    }
+
+
+    &__logo
+    {
+        display: block;
+        width: 36px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+}
+
+
+
+
+
+#hero 
+{
+    &__main 
+    {
+        text-align: center;
+        max-width: 686px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3em;
+    }
+
+    &__title 
+    {
+        @extend .heading-xl;
+    }
+}
+
+#bmi 
+{
+    background-color: $color-White;
+    border-radius: 16px;
+    padding: 1.5em;
+    &__top 
+    {
+        display: flex;
+        margin-bottom: 1.5em;
+        gap:1em;
+
+    }
+
+
+    &__form {
+        margin-bottom: 1.5em;
+    }
+
+    &__metric-container, &__imperial-container 
+    {
+        display: none;
+    }
+
+
+    &__metric-container {
+        flex-direction: column;
+        &.active 
+        {
+            display: flex;
+        }
+    }
+
+    &__imperial-container 
+    {
+        grid-template-columns: calc(50% - 1em) calc(50% - 1em);
+        grid-template-rows: auto auto;
+        align-items: end;
+        column-gap: 1em;
+
+        &.active 
+        {
+            display: grid;
+        }
+    }
+    
+
+
+    &__result 
+    {
+        background: $color-gradient2;
+        color: $color-White;
+        padding:2em;
+        border-radius: 16px;
+    }
+   
+    &__result-bmi 
+    {
+        @extend .heading-xl;
+        color: $color-White;
+    }
+
+    &__result-after 
+    {
+        display: none
+    }
+}
+
+.bmi 
+{
+    &__unit-label 
+    {
+        @extend .body-m-bold;
+        display: flex;
+        width: 50%;
+        position: relative;
+        cursor: pointer;
+        
+        &:hover .bmi__radio-new 
+        {
+            border-color: $color-Blue;
+        }
+        
+    }
+
+   
+    &__radio
+    {
+        margin-right: 1.5em;
+        opacity: 0%;
+    }
+
+    &__radio:checked + &__radio-new &__radio-new-inner
+    {
+        background-color: $color-Blue;
+        width: 50%;
+        height: 50%;
+        border-radius: 50%;
+    }
+
+    &__radio-new 
+    {
+        width: 31px;
+        height: 31px;
+        border: solid 1px $color-Borders;
+        position: absolute;
+        left:0px;
+        top:50%;
+        transform: translateY(-50%);
+        border-radius: 50%;
+        transition: all 300ms;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__stat-label {
+        @extend .body-s;
+        display: block;
+    }
+
+    &__input-container {
+        position: relative;
+    }
+    &__input 
+    {
+        @extend .heading-m;
+        width: 100%;
+        padding: .83em 1em;
+        border-radius: 12px;
+        border:solid 1px $color-Borders;
+        margin-top: .33em;
+    }
+
+    &__measurement 
+    {
+        @extend .heading-m;
+        color: $color-Blue;
+        position: absolute;
+        top: 0px;
+        right: 2em;
+    }
+
+
+   
+
+    &__result-title 
+    {
+        @extend .body-m-bold;
+        color: $color-White;
+    }
+    
+}
+
+@media (min-width: 768px)
+{
+
+    #header {
+        padding:2em 5.2% 6em;
+
+        &::before
+        {
+            height: 65%;
+        }
+    }
+
+   
+    #bmi 
+    {
+        padding: 2em;
+        &__metric-container {
+           flex-direction: row;
+            gap:1em;
+        }
+
+        &__metric-height-container, &__metric-weight-container 
+        {
+            width: 50%;
+        }
+
+        &__result 
+        {
+            border-top-right-radius: 999px;
+            border-bottom-right-radius: 999px;
+        }
+    }
+}
+
+
+@media (min-width: 1440px)
+{
+    #header {
+        padding: 4.8em 11.4% 0;
+        margin-bottom: 4em;
+
+        &::before {
+            height: 100%;
+            width: 70%;
+        }
+
+        &__logo 
+        {
+            margin-left: 0;
+            width: 64px;
+        }
+    }
+    #hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.75em 0 6em;
+
+        &__main 
+        {
+            text-align: left;
+            max-width: 520px;
+            margin-left: 0;
+        }
+    }
+
+    #bmi 
+    {
+        width: 48.6%;
+    }
+
+}

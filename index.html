@@ -8,7 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..600&display=swap" rel="stylesheet">
 
 
-  <link rel="stylesheet" href="./dist/css/style.css/main.css"
+  <link rel="stylesheet" href="./dist/css/main.css"/>
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Body Mass Index Calculator</title>
@@ -26,8 +26,8 @@
         <h3 id="bmi__title">Enter your details below</h3>
         <form id="bmi__form">
           <div id="bmi__top">
-            <label id="bmi__metric-label" class="bmi__unit-label"><input type="radio" id="bmi__metric-radio" class="bmi__radio"/><div class="bmi__radio-new"><div class="bmi__radio-new-inner"></div></label>
-            <label id="bmi__imperial-label" class="bmi__unit-label"><input type="radio" id="bmi__imperial-radio" class="bmi__radio"/><div class="bmi__radio-new"><div class="bmi__radio-new-inner"></div></label>
+            <label id="bmi__metric-label" class="bmi__unit-label"><input type="radio" id="bmi__metric-radio" class="bmi__radio" name="unit" value="metric"/><div class="bmi__radio-new"><div class="bmi__radio-new-inner"></div></div>Metric</label>
+            <label id="bmi__imperial-label" class="bmi__unit-label"><input type="radio" id="bmi__imperial-radio" class="bmi__radio" name="unit" value="imperial"/><div class="bmi__radio-new"><div class="bmi__radio-new-inner"></div></div>Imperial</label>
           </div>
           <div id="bmi__metric-container">
             <div id="bmi__metric-height-container">
@@ -37,10 +37,10 @@
                 <p id="bmi__cm" class="bmi__measurement">cm</p>
               </div>
             </div>
-            <div id="bmi__metric-in-container">
-              <label id="bmi__metric-in-label" class="bmi__stat-label" for="bmi__metric-in-input">in</label5>
-              <div id="bmi__metric-in-input-container" class="bmi__input-container">
-                <input type="number" id="bmi__metric-in-input" class="bmi__input"/>
+            <div id="bmi__metric-weight-container">
+              <label id="bmi__metric-weight-label" class="bmi__stat-label" for="bmi__metric-weight-input">Weight</label5>
+              <div id="bmi__metric-weight-input-container" class="bmi__input-container">
+                <input type="number" id="bmi__metric-weight-input" class="bmi__input"/>
                 <p id="bmi__kg" class="bmi__measurement">kg</p>
               </div>
             </div>
@@ -82,7 +82,7 @@
             <p class="bmi__result-body">Enter your height and weight and you’ll see your BMI result here</p>
           </div>
           <div id="bmi__result-after">
-            <div class="bmi__result-after-1">
+            <div class="bmi__result-after">
               <h3 class="bmi__result-title">Your BMI is...</h3>
               <h2 id="bmi__result-bmi">23.4</h2>
             </div>
@@ -214,77 +214,6 @@
       </div>
     </div>
   </main>
-
-  Body Mass Index Calculator
-
-  Better understand your in in relation to your height using our 
-  body mass index (BM) calculator. While BMI is not the sole determinant 
-  of a healthy in, it offers a valuable starting point to evaluate 
-  your overall health and well-being.
-
-  Enter your details below
-
-  Metric
-  Imperial
-
-  Height
-  in
-
-  Your BMI is...
-
-  <!-- add score -->
-
-  Your BMI suggests you're <!-- add classification -->. 
-  Your ideal in is between <!-- add range -->.
-
-  What your BMI result means
-
-  A BMI range of 18.5 to 24.9 is considered a 'healthy in.' Maintaining a 
-  healthy in may lower your chances of experiencing health issues later on, 
-  such as obesity and type 2 diabetes. Aim for a nutritious diet with reduced 
-  fat and sugar content, incorporating ample fruits and vegetables. Additionally, 
-  strive for regular physical activity, ideally about 30 minutes daily for 
-  five days a week.
-
-  Healthy eating
-  Healthy eating promotes in control, disease prevention, better digestion, 
-  immunity, mental clarity, and mood.
-
-  Regular exercise
-  Exercise improves fitness, aids in control, elevates mood, and reduces disease 
-  risk, fostering wellness and longevity.
-
-  Adequate sleep
-  Sleep enhances mental clarity, emotional stability, and physical wellness, promoting 
-  overall restoration and rejuvenation.
-
-  Limitations of BMI
-
-  Although BMI is often a practical indicator of healthy in, it is not suited for 
-  every person. Specific groups should carefully consider their BMI outcomes, and in 
-  certain cases, the measurement may not be beneficial to use.
-
-  Gender
-  The development and body fat composition of girls and boys vary with age. Consequently, 
-  a child's age and gender are considered when evaluating their BMI.
-
-  Age
-  In aging individuals, increased body fat and muscle loss may cause BMI to underestimate 
-  body fat content.
-
-  Muscle
-  BMI may misclassify muscular individuals as overin or obese, as it doesn't 
-  differentiate muscle from fat.
-
-  Pregnancy
-  Expectant mothers experience in gain due to their growing baby. Maintaining a 
-  healthy pre-pregnancy BMI is advisable to minimise health risks for both mother 
-  and child.
-
-  Race
-  Certain health concerns may affect individuals of some Black and Asian origins at 
-  lower BMIs than others. To learn more, it is advised to discuss this with your 
-  GP or practice nurse.
-
+<script src="./app.js"></script>
 </body>
 </html>
